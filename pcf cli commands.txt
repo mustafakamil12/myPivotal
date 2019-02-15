@@ -1,0 +1,85 @@
+
+# create org - admin user rights needed
+cf create-org <new org name>
+# note: it will not recreate the org, just gives a warning if it exists
+
+# Creating a space
+# Login
+# select the org from the list presented
+cf create-space <space name>
+
+# target the space
+cf target -o <org name> -s <space name>
+
+# list the spaces - the org has to be targeted first from command above
+cf spaces
+
+# Creating a user
+# login as admin
+# Select org from list presented
+cf create-user <username> <password>
+
+# roles
+# roles are predefined in PCF
+# Org level: OrgManager BillingManager OrgAuditor
+# Space level: SpaceManager SpaceDeveloper SpaceAuditor
+
+# adding a org role to a user
+# Login as admin
+# select org shown from list
+cf set-org-role <user> <org name> <Role from org level list>
+
+# adding a space role to a user
+# login as admin
+# select org
+cf set-space-role <user> <org name> <space name> <Role from space level list>
+
+
+# list services running
+cf services
+
+# list buildpacks installed
+cf buildpacks
+
+# List the available stacks
+cf stacks
+
+# monitoring
+cf apps
+cf app <app to monitor>
+
+# view logs
+cf logs <app> --recent
+# to tail logs drop --recent - ctrl-c to exit
+
+# scaling
+
+# list scaling information
+cf scale <app>
+
+# change number of instances
+cf scale <app> -i 2
+
+# instances / memory / disk
+cf scale <app> -i 2 -k 256M -m 256M
+
+# run a task
+cf run-task <app> "ls -al" --name my-ls
+
+# list domains
+cf domains
+
+# create/delete a shared domain
+cf create-shared-domain <domain_name>
+cf delete-shared-domain <domain_name>
+
+# list env variables
+cf env <app name>
+
+# How to compile and deploy the spring-music app
+git clone https://github.com/cloudfoundry-samples/spring-music
+
+cd spring-music
+gradlew clean assemble
+cf push --hostname spring-music
+
