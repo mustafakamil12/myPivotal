@@ -2,6 +2,8 @@ cf --version
 
 cf help
 
+cf help | grep "service"
+
 cf api --help
 
 cf api -h
@@ -31,4 +33,38 @@ http://helloworld-rested-lynx.cfapps.io/
 https://api.dev.cfdev.sh
 
 Example - `cf dev start -f ~/Downloads/pcfdev-state/pcfdev-deps-darwin-0.0.71.tgz`
+
+======================================================================================
+From Ameri computer...
+
+λ cf api https://api.run.pivotal.io                      
+Setting api endpoint to https://api.run.pivotal.io...    
+OK                                                       
+
+api endpoint:   https://api.run.pivotal.io               
+api version:    2.131.0                                  
+Not logged in. Use 'cf login' to log in.                 
+
+
+λ       
+
+λ cf login
+API endpoint: https://api.run.pivotal.io
+
+
+
+Targeted org cf-mustafa-developers                                        
+
+Targeted space development                                                
+
+API endpoint:   https://api.run.pivotal.io (API version: 2.131.0)         
+User:           godric.phoenix@gmail.com                                  
+Org:            cf-mustafa-developers                                     
+Space:          development                                               
+
+C:\Users\v435431\Downloads\cmder                                          
+λ                                                                         
+
+
+======================================================================================
 
