@@ -1,4 +1,10 @@
-
+#check if the cf working on ur computer
+cf --version
+cf help
+cf help | grep "service"
+#get help for specific command
+cf api --help
+cf api -h
 # create org - admin user rights needed
 cf create-org <new org name>
 # note: it will not recreate the org, just gives a warning if it exists
