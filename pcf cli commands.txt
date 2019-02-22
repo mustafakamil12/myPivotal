@@ -40,12 +40,30 @@ cf set-org-role <user> <org name> <Role from org level list>
 # select org
 cf set-space-role <user> <org name> <space name> <Role from space level list>
 
+# creating service
+cf create-service <SERVICE_NAME> <PLAN> <INSTANCE_NAME>
 
 # list services running
 cf services
 
+# get detail for specific service
+cf service <service Name>
+
+# bind service to an app
+cf bind-service <APP_Name> <SERVICE_INSTANCE>
+
+# to see enviroment variables 
+cf env <APP_NAME>
+
 # list buildpacks installed
 cf buildpacks
+
+# specify specific build pack with push command
+cf push <MY_APP> -b binary_buildpack
+
+# specify github url for buildpack
+
+cf push <MY_APP> -b <github url>
 
 # List the available stacks
 cf stacks

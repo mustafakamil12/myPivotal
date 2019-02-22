@@ -1,0 +1,16 @@
+PCF Ops Manager
+web: https://opsman.adc.sandbox.pcf.amerisourcebergen.com/
+
+admin
+uB2InTdrqqccuMUgolIJJ6lkCiVcwL 
+
+ 
+cf login -a https://api.sys.adc.sandbox.pcf.amerisourcebergen.com -sso 
+
+click on sso don't use email and pass just get the passcode
+ 
+
+https://login.sys.adc.sandbox.pcf.amerisourcebergen.com/passcode
+
+
+cf login -a api.sys.adc.sandbox.pcf.amerisourcebergen.com -sso
