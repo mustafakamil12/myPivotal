@@ -14,3 +14,31 @@ https://login.sys.adc.sandbox.pcf.amerisourcebergen.com/passcode
 
 
 cf login -a api.sys.adc.sandbox.pcf.amerisourcebergen.com -sso
+================================================================
+
+PS U:\> java -version
+java version "1.8.0_201"
+Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
+PS U:\> 
+
+
+https://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk
+================================================================
+
+Information Required to install JDK
+1. we have jre 1.8
+2. we need jdk 1.8
+3. we are going to install Java SE 8u201 / Java SE 8u202
+4. VirtualBox 5.0.3
+
+================================================================
+
+Some Notes about virtual box need to be used with PCF
+
+* Make sure you aren't running in another nested VM
+* Use the latest Virtualbox 5.1.x release, instead of 5.2.2
+
+Ok Bad notice for me and my Linux. The problem is that the new cfdev only support macOS at this time, again bad notice for my Linux. I will install PCF Dev on my mac laptop with VirtualBox 5.0.3
+
+Regards
