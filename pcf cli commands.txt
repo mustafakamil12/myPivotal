@@ -81,6 +81,12 @@ cf restart <APP-NAME>
 # if we need to recompile the drop let, used when there's change to the enviroment variable.
 cf restage <APP-NAME>
 
+# if we have different yaml file need to be used instead of manifest.yml
+cf push -f <path-to-manifest-file>
+
+# if we need to ignor the manifest file we can use parameters
+cf push <APP-NAME> [<PARM1>...<PARM2>] --no-manifest
+
 # List the available stacks
 cf stacks
 
