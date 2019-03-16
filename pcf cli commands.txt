@@ -75,8 +75,11 @@ cf push -c "null"
 # deplpy app with a different name
 cf push <NEW-APP-NAME>
 
-# to restart app
+# to restart app, it will target the droplet, will be used if there's a service binded for the first time, update to the enviroment variable.
 cf restart <APP-NAME>
+
+# if we need to recompile the drop let, used when there's change to the enviroment variable.
+cf restage <APP-NAME>
 
 # List the available stacks
 cf stacks
