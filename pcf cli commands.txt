@@ -64,8 +64,13 @@ cf buildpacks
 cf push <MY_APP> -b binary_buildpack
 
 # specify github url for buildpack
-
 cf push <MY_APP> -b <github url>
+
+# 
+cf push -c ".\application"
+
+# to clear app and re-deploy it again
+cf push -c "null"
 
 # List the available stacks
 cf stacks
