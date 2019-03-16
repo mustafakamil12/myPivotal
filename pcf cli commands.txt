@@ -92,6 +92,8 @@ cf stacks
 
 # monitoring
 cf apps
+
+# to see health and status of your app.
 cf app <app to monitor>
 
 # view logs
