@@ -112,6 +112,7 @@ cf scale <app> -i 2
 cf scale <app> -i 2 -k 256M -m 256M
 
 # run a task
+cf run-task <APP_NAME> <COMMAND> [--name <TASK_NAME>]
 cf run-task <app> "ls -al" --name my-ls
 
 # list domains
