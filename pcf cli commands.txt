@@ -75,6 +75,9 @@ cf push -c "null"
 # deplpy app with a different name
 cf push <NEW-APP-NAME>
 
+# to restart app
+cf restart <APP-NAME>
+
 # List the available stacks
 cf stacks
 
