@@ -72,6 +72,9 @@ cf push -c ".\application"
 # to clear app and re-deploy it again
 cf push -c "null"
 
+# deplpy app with a different name
+cf push <NEW-APP-NAME>
+
 # List the available stacks
 cf stacks
 
