@@ -125,6 +125,9 @@ cf domains
 cf create-shared-domain <domain_name>
 cf delete-shared-domain <domain_name>
 
+# to retrieve the list of router groups
+cf router-groups
+
 # list env variables
 cf env <app name>
 
