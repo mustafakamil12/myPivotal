@@ -128,8 +128,13 @@ cf delete-shared-domain <domain_name>
 # to retrieve the list of router groups
 cf router-groups
 
-#create/delete tcp shared domain
+# create/delete tcp shared domain
 cf create-shared-domain <DOMAIN-NAME> --router-group <ROUTER GROUP NAME>
+cf delete-shared-domain <DOMAIN-NAME> --router-group <ROUTER GROUP NAME>
+
+# create http private domain
+cf create-domain <ORG-NAME> <PRIVATE_DOMAIN_NAME>
+
 
 # list env variables
 cf env <app name>
