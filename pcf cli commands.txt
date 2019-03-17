@@ -121,12 +121,15 @@ cf tasks <APP-NAME>
 # list domains
 cf domains
 
-# create/delete a shared domain
+# create/delete http shared domain
 cf create-shared-domain <domain_name>
 cf delete-shared-domain <domain_name>
 
 # to retrieve the list of router groups
 cf router-groups
+
+#create/delete tcp shared domain
+cf create-shared-domain <DOMAIN-NAME> --router-group <ROUTER GROUP NAME>
 
 # list env variables
 cf env <app name>
