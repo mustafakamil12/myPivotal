@@ -135,6 +135,9 @@ cf delete-shared-domain <DOMAIN-NAME> --router-group <ROUTER GROUP NAME>
 # create http private domain
 cf create-domain <ORG-NAME> <PRIVATE_DOMAIN_NAME>
 
+# create http sub private domain
+cf create-domain <ORG-NAME> <SUB.PRIVATE_DOMAIN_NAME>
+
 
 # list env variables
 cf env <app name>
