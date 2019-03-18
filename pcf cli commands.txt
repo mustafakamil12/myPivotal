@@ -138,6 +138,8 @@ cf create-domain <ORG-NAME> <PRIVATE_DOMAIN_NAME>
 # create http sub private domain
 cf create-domain <ORG-NAME> <SUB.PRIVATE_DOMAIN_NAME>
 
+# to enable a private domain to be used with another Org, say OrgB 
+cf share-private-domain OrgB my-private-domain.com
 
 # list env variables
 cf env <app name>
